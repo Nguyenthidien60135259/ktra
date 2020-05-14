@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang = " vi ">
+	<head>
+	<meta charset="UTF-8">
+	<title>Baikiemtra</title>
+    <style type="text/css">
+		*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body
+	{
+	font-size: 18px;
+	width: 100%;
+	background: url(../TAINGUYEN/images.jpg);
+	}
+	#web
+	{
+	width: 80%;
+	margin: 20px auto;
+	background-color: white;
+	padding-bottom: 20px;
+	}
+	#header
+	{
+	width: 98%;
+	margin: 5px auto;
+	background: url(../TAINGUYEN/canhnt.jpg) repeat-x;
+	height: 112px;
+	text-align: center;
+	}
+	#header h1
+	{
+	color: transparent;
+	background:linear-gradient(to bottom, red, yellow);
+	-webkit-background-clip: text;
+	line-height: 112px;
+	}
+	#menu
+	{
+	width: 98%;
+	margin: 0px auto;
+	background: linear-gradient(to top, gray, lightgray);
+	}
+	#menu ul li
+	{
+	float: left;
+	list-style: none;
+	padding: 10px 15px;
+	border-right: 1px solid black;
+	}
+	#menu ul li a
+	{
+	color: black;
+	display: block;
+	text-decoration: none;
+	}
+	#menu ul li a:hover
+	{
+	color: #FF6E00;
+	}
+	#main
+	{
+	width: 98%;
+	margin: 0px auto;
+	}
+	#main_left
+	{
+	width: 70%;
+	float: left;
+	background-color: #C4E4D9;
+	padding: 15px;
+	}
+	#main_left p
+	{
+	color: blue;
+	}
+	#main_left table
+	{
+	border-collapse: collapse;
+	line-height: 30px;
+	}
+	#main_left table, tr, th, td
+	{
+	border: 2px solid #C4E4D9;
+	}
+	#main_left th
+	{
+	background-color: #0000;
+	}
+	#main_right
+	{
+	margin-left: 10px;
+	width: 29%;
+	float: right;
+	background-color: #BCBCBC;
+	line-height: 35px;
+	}
+	#main_right_top, #main_right_bottom
+	{
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid black;
+	}
+	#main_right_top span, content
+	{
+	font-weight: bold;
+	padding-left: 10px;
+	display: block;
+	border-bottom: 1px solid black;
+	}
+	#main_right_top ul li
+	{
+	list-style: none;
+	padding-left: 10px;
+	border-bottom: 1px solid gray;
+	}
+	#main_right_top ul li a
+	{
+	text-decoration: none;
+	color: black;
+	}
+	#main_right_top ul li a:hover
+	{
+	color: #F57200;
+	}
+	#main_right_bottom
+	{
+	padding: 10px;
+	}
+	#main_right_bottom lable
+	{
+	width: 72px;
+	display: inline-block;
+	color: blue;
+	font-style: italic;
+	font-weight: bold;
+	}
+	#main_right_bottom input[type="text"], input[type="password"]
+	{
+	width: 204px;
+	}
+	#main_right_bottom input[type="button"]
+	{
+	background-color: gray;
+	border-radius: 10px;
+	padding: 4px 10px;
+	color: #640001;
+	font-weight: bold;
+	margin-left: 85px;
+	margin-right: 5px;
+}
+#main_right_bottom a
+{
+	color: #F53500;
+}
+#footer
+{
+	width: 98%;
+	margin: 0 auto;
+	background-color: #5972AC;
+	text-align: center;
+	padding: 5px 0px;
+	color: white;
+	font-weight: bold;
+	}
+	.clearfix::after
+	{
+	content: "";
+	clear: both;
+	display: table;
+	}
+	</style>
+</head>
+<body>
+    <div id="web">
+        <div id="header" class="clearfix">
+			<h1>AJAX Technology</h1>
+        </div>
+		<div id="menu" class="clearfix">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Demos</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<div id="main" class="clearfix">
+			<div id="main_left">
+				<h2>What is Ajax</h2>
+				As defined in Wikipedia
+				<p>"AJAX is a group of interrelated web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.</p>
+				<h2>Brief History</h2>
+				<table>
+					<tr>
+						<th>Year</th>
+						<th>Event</th>
+					</tr>
+					<tr>
+						<td>1995</td>
+						<td>Java appriet were introduced the first way to load data from client side asynchronosly....</td>
+					</tr>
+					<tr>
+						<td>1996</td>
+						<td>Iframe element were Introduced, which also have this function</td>
+					</tr>
+					<tr>
+						<td>1999</td>
+						<td>Microsoft craeted the XMLHTTP ActiveX control in Internet Explorer 5 which folled by other browsers as...</td>
+					</tr>
+					<tr>
+						<td>2005</td>
+						<td>The term"Ajax" was borned</td>
+					</tr>
+					<tr>
+						<td>2006</td>
+						<td>The W3C, in order to make it offical web standard, publicized the first draft speification for XMLHttpRequest Object </td>
+					</tr>
+				</table>
+			</div>
+			<div id="main_right">
+				<div id="main_right_top">
+					<ul>
+						<span>CSS Styles</span>
+						<li><a href="#">Light Version Style</a></li>
+						<li><a href="#">Dark Version Style</a></li>
+					</ul>
+					<ul>
+						<content>Useful links</content>
+						<li><a href="">W3C</a></li>
+						<li><a href="">NTU</a></li>
+						<li><a href="">Google</a></li>
+					</ul>
+				</div>
+				<div id="main_right_bottom">
+					<form action="">
+						<b>Login</b><br>
+						<lable for="user">Username</lable>
+						<input type="text" name="user">
+						<br><lable for="pass">Password</lable>
+						<input type="password" name="pass">
+						<input type="button" value="Login">
+						<a href="#">Register</a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="clearfix">
+			May 14, 2020 Vaid XHTML and CSS. This page designed by  < Châu Cẩm Ly> - <59131356>
+		</div>
+    </div>
+</body>
+</html>
